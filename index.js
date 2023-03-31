@@ -19,7 +19,7 @@ const questions = [
     type: "list",
     name: "shape",
     message: "Please choose a shape for your logo:",
-    choices: ["Circle", "Triangle", "Square"],
+    choices: ["circle", "triangle", "square"],
   },
   {
     type: "input",
@@ -30,12 +30,12 @@ const questions = [
 ];
 
 function writeToFile(data) {
-  let fileName = "./examples/.svg";
+  let fileName = "./examples/logo.svg";
   fs.writeFile(fileName, data, (err) => {
     if (err) {
       return console.log(err);
     }
-    console.log("Your .svg file has been created!");
+    console.log("Generated logo.svg!");
   });
 }
 
