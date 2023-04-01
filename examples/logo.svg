@@ -1,4 +1,4 @@
- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 100 170">
-        <polygon points="50 15, 100 100, 0 100" fill="blue"/>
-            <text x="35" y="75" class="small" fill="red">bma</text>
-    </svg>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="30" fill="#000000"/>
+    <text x="36" y="54" class="small" fill="red">bma</text>
+  </svg>

@@ -37,12 +37,15 @@ function writeToFile(data) {
     }
     console.log("Generated logo.svg!");
   });
-}
+  }
+
+
 
 function init() {
   inquirer
     .prompt(questions)
-    .then((answers) => writeToFile(generateLogo(answers)));
+    .then((answers) => writeToFile(generateLogo(answers)))
+    .catch((err) => console.log(err));
 }
 
 init();
